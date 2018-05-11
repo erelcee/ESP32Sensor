@@ -2,8 +2,8 @@
 #include <HTTPClient.h>
 
 #define NAME "Grains"
-#define WIFI_SSID "TobyWifi"
-#define WIFI_PASS "doemdaka090486"
+//Don't give personal wifi specifications  in public only mention that here comes the Wufi data//
+
 
 void setup() {  
   Serial.begin(115200);
