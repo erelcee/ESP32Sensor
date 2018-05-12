@@ -46,7 +46,7 @@ void loop() {
       digitalWrite(redled, HIGH);
       digitalWrite(greenled, HIGH);
     }
-    if ((sensorValue >= 500 )) { // greenled on =  the flowerbox is okay
+    if (sensorValue >= 500 ) { // greenled on =  the flowerbox is okay
       digitalWrite(redled, LOW);
       digitalWrite(greenled, HIGH);
     }
