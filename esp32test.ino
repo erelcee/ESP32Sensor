@@ -19,7 +19,7 @@ void setup() {
   const int sensoron 12;// 3.3V to sensor moisture flowerbox with 10K potmeter in series to inputadc
   const int redled 13;
   const int greenled 14;// redled and greenled on = orange
-  const int inputadc 36;// output value 0 to 4093
+  const int inputadc 36;// output value 0 to 4095
 
   pinMode(sensoron, OUTPUT);
   pinMode(redled, OUTPUT);
