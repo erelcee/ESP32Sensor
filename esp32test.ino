@@ -38,15 +38,15 @@ void loop() {
     delay(500);
     int sensorValue = analogRead(inputadc);
 
-    if (sensorValue < 250) {   // redled on = flowerbox is much too dry or sensor not connected
+    if (sensorValue < 500) {   // redled on = flowerbox is much too dry or sensor not connected
       digitalWrite(redled, HIGH);
       digitalWrite(greenled, LOW);
     }
-    if ((sensorValue >= 250) && (sensorValue < 500)) { //orangeled on = the flowerbox needs water
+    if ((sensorValue >= 500) && (sensorValue < 540)) { //orangeled on = the flowerbox needs water
       digitalWrite(redled, HIGH);
       digitalWrite(greenled, HIGH);
     }
-    if (sensorValue >= 500 ) { // greenled on =  the flowerbox is okay
+    if (sensorValue >= 540 ) { // greenled on =  the flowerbox is okay
       digitalWrite(redled, LOW);
       digitalWrite(greenled, HIGH);
     }
